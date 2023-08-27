@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0
+}
+
+body{
+  font-family: sans-serif;
+  
+}
+
+.header{
+ padding: 30px;
+ height: 40px;
+ background-color: #000;
+ margin: auto;
+}
+
+.nav-main{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  gap: 1rem;
+
+  
+}
+
+.buscar{
+background-color: transparent;
+border: 1px solid #89b0f8;
+padding: 13px;
+width: 350px;
+border-radius: 15px;
+outline: none;
+color: #fff;
+}
+
+.nav-main button{
+  background-color: #89b0f8;
+  padding: 12px;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  gap: .5rem;
+ flex-wrap: wrap;
+
+}
+
+.card{
+  display:flex;
+  flex-direction: column;
+ justify-content: center;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 230px;
+  height: 280px;
+  padding: 1rem .7rem 1rem .7rem;
+  box-shadow: 0px 10px 15px rgb(214, 195, 195);
+  gap: .7rem;
+  
+}
+
+.card img{
+  background-color: #eeee;
+  border-radius: 15px;
+
+}
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width:350px){
+  .header {
+      padding: 15px;
+      height: auto;
+  }
+
+  .nav-main {
+      gap: 0.5rem;
+  }
+
+  .buscar {
+      width: 100%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+      width: 100%;
+      height: auto;
+  }
+}
+
